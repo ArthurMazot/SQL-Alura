@@ -1,0 +1,10 @@
+select UPPER(nome) as NomeMaiusculo from TabelaClientes;
+select LOWER(nomecolaborador) as NomeMinusculo from TabelaColaboradores;
+SELECT CONCAT(SUBSTRING(nome, 1, 3), SUBSTRING(cpf, 1, 3)) as Identificador from TabelaClientes;
+SELECT nome, LEnGTH(nome) as Comprimento from TabelaClientes;
+SELECT (nomecolaborador || ' - ' || cargo) as NomeCompletoCargo from TabelaColaboradores;
+SELECT REPLACE(nomedepartamento, 'Recursos Humanos', 'RH') as NomeAtualizado from TabelaDepartamento;
+SELECT tipo || ' - ' || status || ' - $' || valor from TabelaEmprestimo;
+select id_pagamento, (SUBSTRING(status, 1, 3) || id_pagamento) as IdentificadorPagamento from TabelaPagamentos;
+SELECT id_score, fonte, UPPER(SUBSTRING(fonte, 1, 3)) AS FonteAbreviado from TabelaScoreCredito;
+select id_emprestimo, TRIM(tipo) as Tipo from TabelaEmprestimo;
