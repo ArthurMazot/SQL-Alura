@@ -1,0 +1,10 @@
+SELECT nomecolaborador, salario, id_departamento from TabelaColaboradores where id_departamento = 'D03' and salario > 4500;
+select nome, datanascimento, estado from TabelaClientes where datanascimento < '1990-01-01' or estado = 'SP';
+select id_emprestimo, datainicio, tipo, valor from TabelaEmprestimo where datainicio BETWEEN '2023-01-01' and '2023-03-31';
+SELECT nome, datanascimento, cpf from TabelaClientes where strftime('%Y', 'now') - strftime('%Y', DataNascimento) >= 18;
+SELECT id_emprestimo, tipo, valor from TabelaEmprestimo where tipo in ('Pessoal', 'Imobiliário');
+sELECT id_emprestimo, tipo, valor from TabelaEmprestimo where (valor BETWEEN 10000 and 50000) and (tipo in ('Consignado', 'Automóvel'));
+select DISTINCT estado from TabelaClientes;
+select nome, cpf, cidade, estado from TabelaClientes where cpf like '6%';
+SELECT id_pagamento, datapagamento, valor, status from TabelaPagamentos where (datapagamento BETWEEN '2023-01-01' and '2023-12-13') and (valor between 500 and 1000);
+SELECT id_cliente, pontuacao, fonte from TabelaScoreCredito where pontuacao <= 700;
