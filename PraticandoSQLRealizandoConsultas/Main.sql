@@ -1,0 +1,10 @@
+SELECT * fROm TabelaClientes;
+SELECT nomecolaborador, cargo fROm TabelaColaboradores;
+SELECT * fROm TabelaEmprestimo where status = 1;
+SELECT Nome, estado from TabelaClientes where estado = 'SP';
+SELECT nomecolaborador, salario from TabelaColaboradores where salario > 5000;
+SELECT * from TabelaEmprestimo where valor >= 10000;
+SELECT nomecolaborador, cargo from TabelaColaboradores order by nomecolaborador asc;
+select * from TabelaColaboradores LIMIT 5;
+SELECT * from TabelaEmprestimo ORDER by valor desc;
+SELECT * from TabelaColaboradores where salario >= 5000 order by id_colaborador desc limit 2;
