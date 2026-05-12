@@ -1,0 +1,10 @@
+SELECT SUM(Valor) as TotalEmprestimo from TabelaEmprestimo;
+select AVG(Salario) as MedidaSalrio from TabelaColaboradores;
+select MAX(Valor) as MaiorEmprestimo From TabelaEmprestimo;
+select MIN(Valor) as MenorEmprestimo From TabelaEmprestimo;
+SELECT COUNT(*) AS TotalColaboradores From TabelaColaboradores;
+SELECT SUM(Valor)/COUNT(*) AS MediaAEmprestimos from TabelaEmprestimo;
+SELECT id_departamento, SUM(Salario) as TotalSalarios from TabelaColaboradores group by id_departamento;
+select Tipo, SUM(Valor) AS TotalPorTipo from TabelaEmprestimo group by Tipo HAVING SUM(Valor) > 20000;
+select Tipo, SUM(Valor) AS TotalValor, count(*) as QuantidadeEmprestimos from TabelaEmprestimo group by Tipo;
+select SUM(Valor) as TotalEmprestimos, AVG(Valor) as MediaEmprestimos, MAX(Valor) AS MaiorEmprestimo, MIN(Valor) as MenorEmprestimo from TabelaEmprestimo;
