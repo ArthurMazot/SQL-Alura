@@ -1,0 +1,9 @@
+DROP TABLE TabelaDepartamento;
+DROP TABLE TabelaColaboradores;
+DROP TABLE TabelaClientes;
+DROP TABLE TabelaTelefones;
+DROP TABLE TabelaEmprestimo;
+DROP TABLE TabelaPagamentos;
+DROP TABLE TabelaScoreCredito;
+DROP TABLE TabelaConta;
+DROP TABLE TabelaClienteConta;
